@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rqalpha-mod-biance
+Version: 0.1.0
+Summary: RQAlpha Mod to say hello
+Home-page: 
+Author: 
+Author-email: 
+License: Apache License v2
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Liunx
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.12
