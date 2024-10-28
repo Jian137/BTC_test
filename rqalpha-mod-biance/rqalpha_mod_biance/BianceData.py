@@ -3,15 +3,15 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from rqalpha.data.base_data_source import BaseDataSource
 import getkey
-
+from binance.client import Client
 
 
 
 class BianceDataSource(BaseDataSource):
-    def __init__(self, path,configpath):
+    def __init__(self, path,custom_future_info):
         # 初始化
-        super(BianceDataSourc, self).__init__(path)
-        config = getkey.readconfig(configpath)
+        super(BianceDataSource, self).__init__(path,custom_future_info)
+        config = getkey.readconfig("/home/marisa/workspace/BTC_test/key_config.yaml")
         
         self.client = Client(config["test_config"]["API_Key"],config["test_config"]["Secret_Key"],testnet=True)
     @staticmethod
